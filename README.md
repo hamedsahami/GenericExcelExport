@@ -13,7 +13,10 @@ you can add ExcelExportService class
       <version>3.9</version>
     </dependency>
 
-Sample code of excel export in your project
+//Sample code of excel export in your project
+
 OutputStream downloadStream=null;
+
 ExcelExportService excelExportService = new ExcelExportService<LicenceInformationDto>();
+	
 downloadStream= excelExportService.ToStream(foundedItems);
